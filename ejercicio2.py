@@ -8,20 +8,19 @@ raiz = Tk()
 raiz.title("interface ejercicio 2")
 raiz.config(bg="black")
 
-mainFramearriba = ttk.Frame(raiz,bg="gray40",width=300)
+mainFramearriba = ttk.Frame(raiz,bg="gray40",width=300)#Frame para colocar el texto y la imagen de arriba
 mainFramearriba.grid(pady=5)
 
-mainFramefondo = ttk.Frame(raiz,bg="black")
+mainFramefondo = ttk.Frame(raiz,bg="black")#Frame de fondo
 mainFramefondo.grid()
-#mainFramefondo.config(bg="black")
 
 mainFrameprincipal = ttk.Frame(mainFramefondo,bg="#54312f")
 mainFrameprincipal.grid()
 
-mainFrame1 = ttk.Frame(mainFrameprincipal,bg="#54312f")
+mainFrame1 = ttk.Frame(mainFrameprincipal,bg="#54312f")#frame para texto
 mainFrame1.grid(sticky=W,padx=5)
 
-mainFrame2 = ttk.Frame(mainFrameprincipal,bg="#54312f")
+mainFrame2 = ttk.Frame(mainFrameprincipal,bg="#54312f")#Frame para botones
 mainFrame2.grid(column=1,row=0,sticky=E,padx=30)
 
 mainFramefondotabla = ttk.Frame(mainFramefondo,bg="#54312f")
@@ -42,11 +41,11 @@ btnImagen['image']=imagen2
 
 #mainFrame1
 #primer linea
-ttk.Label(mainFrame1, text="Id product:",font=("Arial",14),background="#54312f",fg="white").grid(column=0, row=0,sticky=W,pady=5,padx=25)
-idEntry = ttk.Entry(mainFrame1,width=30,font=("Arial", 12, "bold"),background="#54312f", fg="white", justify=CENTER )
+ttk.Label(mainFrame1, text="Id product:",font=("Arial",14),background="#54312f",fg="white").grid(column=0, row=0,sticky=W,pady=5,padx=25)#bg o background color de fondo
+idEntry = ttk.Entry(mainFrame1,width=30,font=("Arial", 12, "bold"),background="#54312f", fg="white", justify=CENTER )#fg color letra
 idEntry.config(borderwidth=0,highlightthickness=0) # Configura los atributos para hacer el marco invisible
 idEntry.grid(column=1,row=0)
-ttk.Label(mainFrame1, text="_____________________", bg="#54312f", font=("Arial", 12, "bold"), fg="white").grid(column=1, row=0, padx=10)
+ttk.Label(mainFrame1, text="_____________________", bg="#54312f", font=("Arial", 12, "bold"), fg="white").grid(column=1, row=0, padx=10)#font formato del texto
 #segunda linea
 ttk.Label(mainFrame1, text="Name:",font=("Arial",14),background="#54312f",fg="white").grid(column=0, row=1,sticky=W,pady=5,padx=25)
 nameEntry = ttk.Entry(mainFrame1,width=30,font=("Arial", 12, "bold"),background="#54312f", fg="white", justify=CENTER)
